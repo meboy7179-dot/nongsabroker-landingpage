@@ -24,7 +24,7 @@ const TrustMetrics = () => {
                             15,000<span className="metric-unit">+</span>
                         </h3>
                         <p className="metric-label">누적 매칭 인력 수</p>
-                        <span className="metric-subtext">Matched Workforce</span>
+                        <span className="metric-subtext">검증된 인력 공급</span>
                     </div>
 
                     <div className="metric-card">
@@ -35,7 +35,7 @@ const TrustMetrics = () => {
                             98.5<span className="metric-unit">%</span>
                         </h3>
                         <p className="metric-label">평균 출근율</p>
-                        <span className="metric-subtext">Avg. Attendance Rate</span>
+                        <span className="metric-subtext">높은 성실도</span>
                     </div>
 
                     <div className="metric-card">
@@ -46,7 +46,7 @@ const TrustMetrics = () => {
                             92<span className="metric-unit">%</span>
                         </h3>
                         <p className="metric-label">재이용 농가 비율</p>
-                        <span className="metric-subtext">Retention Rate</span>
+                        <span className="metric-subtext">높은 만족도</span>
                     </div>
                 </div>
 

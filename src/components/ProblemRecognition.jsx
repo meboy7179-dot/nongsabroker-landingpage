@@ -12,7 +12,7 @@ const ProblemRecognition = () => {
                     <h2 className="section-title">
                         농촌 인력난,<br className="break-md" /> 이제 걱정하지 마세요.
                         <span className="section-subtitle">
-                            We solve the critical challenges of agricultural labor.
+                            농업 인력난의 핵심 문제를 해결합니다.
                         </span>
                     </h2>
                 </div>
@@ -26,7 +26,7 @@ const ProblemRecognition = () => {
                         <h3 className="card-title">고령화로 줄어드는 인력</h3>
                         <p className="card-description">
                             일할 사람은 줄어들고, 평균 연령은 높아지는 현실.<br />
-                            Declining rural workforce due to aging population.
+                            고령화로 인한 농촌 인력 감소 문제.
                         </p>
                     </div>
 
@@ -38,7 +38,7 @@ const ProblemRecognition = () => {
                         <h3 className="card-title">갑작스러운 노쇼</h3>
                         <p className="card-description">
                             바쁜 수확철, 예고 없이 연락이 두절되는 인부들.<br />
-                            Sudden no-shows and work stoppages.
+                            예고 없는 노쇼와 작업 중단.
                         </p>
                     </div>
 
@@ -50,7 +50,7 @@ const ProblemRecognition = () => {
                         <h3 className="card-title">의사소통의 어려움</h3>
                         <p className="card-description">
                             외국인 근로자와의 언어 장벽으로 인한 작업 실수.<br />
-                            Communication barriers leading to errors.
+                            의사소통 장벽으로 인한 작업 오류.
                         </p>
                     </div>
                 </div>

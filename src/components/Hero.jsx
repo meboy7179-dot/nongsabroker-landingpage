@@ -37,7 +37,7 @@ const Hero = () => {
                                     <span className="badge-dot-ping"></span>
                                     <span className="badge-dot"></span>
                                 </span>
-                                <span className="badge-text">Trusted by 5,000+ Farms</span>
+                                <span className="badge-text">5,000+ 농가 인증</span>
                             </div>
 
                             <h1 className="hero-title">
@@ -96,7 +96,7 @@ const Hero = () => {
                                             <p className="overlay-label">오늘의 예상 수익</p>
                                             <p className="overlay-value">₩ 130,000</p>
                                         </div>
-                                        <div className="overlay-badge">Working</div>
+                                        <div className="overlay-badge">작업 중</div>
                                     </div>
                                 </div>
 
