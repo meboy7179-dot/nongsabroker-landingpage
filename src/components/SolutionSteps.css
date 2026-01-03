@@ -1,0 +1,175 @@
+.steps-section {
+    padding: 4rem 1rem;
+    width: 100%;
+}
+
+@media (min-width: 640px) {
+    .steps-section {
+        padding: 4rem 1.5rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .steps-section {
+        padding: 4rem 2rem;
+    }
+}
+
+.steps-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.steps-title {
+    font-size: 1.875rem;
+    font-weight: 700;
+    letter-spacing: -0.025em;
+    color: var(--color-text-main-light);
+    margin-bottom: 1rem;
+}
+
+@media (min-width: 640px) {
+    .steps-title {
+        font-size: 2.25rem;
+    }
+}
+
+.steps-description {
+    font-size: 1.125rem;
+    color: var(--color-text-sub-light);
+    max-width: 42rem;
+    margin: 0 auto;
+}
+
+.steps-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+@media (min-width: 768px) {
+    .steps-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.step-card {
+    position: relative;
+}
+
+.step-divider {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: -1rem;
+    width: 2rem;
+    border-top: 2px dashed #E5E7EB;
+    transform: translateY(-50%);
+    z-index: 0;
+}
+
+@media (min-width: 768px) {
+    .step-divider {
+        display: block;
+    }
+}
+
+.step-card-inner {
+    height: 100%;
+    background-color: var(--color-surface-light);
+    border-radius: 1rem;
+    padding: 2rem;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    border: 1px solid transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: box-shadow 0.3s;
+}
+
+.step-card:hover .step-card-inner {
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.step-icon-wrapper {
+    width: 4rem;
+    height: 4rem;
+    background-color: rgba(60, 207, 90, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+    transition: transform 0.3s;
+}
+
+.group:hover .group-hover-scale {
+    transform: scale(1.1);
+}
+
+.step-icon {
+    font-size: 1.875rem;
+    color: var(--color-primary);
+}
+
+.step-badge {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    background-color: rgba(60, 207, 90, 0.1);
+    color: var(--color-primary-dark);
+    padding: 0.25rem 0.75rem;
+    border-radius: 9999px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.step-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+    color: var(--color-text-main-light);
+}
+
+.step-text {
+    color: var(--color-text-sub-light);
+    line-height: 1.625;
+}
+
+.steps-footer {
+    margin-top: 3rem;
+    text-align: center;
+}
+
+.steps-cta {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.75rem 2rem;
+    border-radius: 9999px;
+    background-color: var(--color-primary);
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+    box-shadow: 0 10px 15px -3px rgba(60, 207, 90, 0.3);
+    transition: background-color 0.2s;
+}
+
+@media (min-width: 768px) {
+    .steps-cta {
+        font-size: 1.125rem;
+    }
+}
+
+.steps-cta:hover {
+    background-color: var(--color-primary-dark);
+}
+
+.steps-footer-text {
+    margin-top: 1rem;
+    font-size: 0.875rem;
+    color: var(--color-text-sub-light);
+}

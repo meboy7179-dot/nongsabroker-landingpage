@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Nongin Broker - Trust Metrics</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet"/>
+<script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#34D357", // Bright green from screenshots
+              "background-light": "#F7F8FA", // Very light grey/white background
+              "background-dark": "#121212", // Dark mode background
+              "card-light": "#FFFFFF",
+              "card-dark": "#1E1E1E",
+              "text-primary-light": "#191F28", // Dark text for light mode
+              "text-primary-dark": "#FFFFFF", // White text for dark mode
+              "text-secondary-light": "#8B95A1", // Grey text for light mode
+              "text-secondary-dark": "#A0A0A0", // Grey text for dark mode
+            },
+            fontFamily: {
+              display: ["Noto Sans KR", "sans-serif"],
+            },
+            borderRadius: {
+              DEFAULT: "1rem", // consistent rounded corners
+            },
+          },
+        },
+      };
+    </script>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display min-h-screen flex flex-col items-center justify-center p-6 transition-colors duration-300">
+<section class="w-full max-w-6xl mx-auto">
+<div class="text-center mb-16 space-y-4">
+<h2 class="text-4xl md:text-5xl font-black text-text-primary-light dark:text-text-primary-dark leading-tight">
+                숫자로 증명하는<br/>
+<span class="text-primary">확실한 신뢰</span>
+</h2>
+<p class="text-lg md:text-xl text-text-secondary-light dark:text-text-secondary-dark font-medium">
+                농인 브로커는 데이터로 투명하게 일합니다.
+            </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 px-4">
+<div class="group flex flex-col items-center justify-center p-8 rounded-3xl bg-card-light dark:bg-card-dark shadow-sm hover:shadow-md transition-all duration-300 border border-transparent hover:border-primary/20">
+<div class="mb-4 p-4 rounded-full bg-primary/10 text-primary">
+<span class="material-icons-round text-4xl">groups</span>
+</div>
+<h3 class="text-5xl md:text-6xl font-black text-text-primary-light dark:text-text-primary-dark mb-2 tracking-tight group-hover:scale-105 transition-transform duration-300">
+                    15,000<span class="text-3xl md:text-4xl text-text-secondary-light dark:text-text-secondary-dark font-bold ml-1">+</span>
+</h3>
+<p class="text-lg text-text-secondary-light dark:text-text-secondary-dark font-semibold mt-2">
+                    누적 매칭 인력 수
+                </p>
+<span class="text-sm text-gray-400 dark:text-gray-500 mt-1">Matched Workforce</span>
+</div>
+<div class="group flex flex-col items-center justify-center p-8 rounded-3xl bg-card-light dark:bg-card-dark shadow-sm hover:shadow-md transition-all duration-300 border border-transparent hover:border-primary/20">
+<div class="mb-4 p-4 rounded-full bg-primary/10 text-primary">
+<span class="material-icons-round text-4xl">check_circle</span>
+</div>
+<h3 class="text-5xl md:text-6xl font-black text-primary mb-2 tracking-tight group-hover:scale-105 transition-transform duration-300">
+                    98.5<span class="text-3xl md:text-4xl text-text-secondary-light dark:text-text-secondary-dark font-bold ml-1">%</span>
+</h3>
+<p class="text-lg text-text-secondary-light dark:text-text-secondary-dark font-semibold mt-2">
+                    평균 출근율
+                </p>
+<span class="text-sm text-gray-400 dark:text-gray-500 mt-1">Avg. Attendance Rate</span>
+</div>
+<div class="group flex flex-col items-center justify-center p-8 rounded-3xl bg-card-light dark:bg-card-dark shadow-sm hover:shadow-md transition-all duration-300 border border-transparent hover:border-primary/20">
+<div class="mb-4 p-4 rounded-full bg-primary/10 text-primary">
+<span class="material-icons-round text-4xl">published_with_changes</span>
+</div>
+<h3 class="text-5xl md:text-6xl font-black text-text-primary-light dark:text-text-primary-dark mb-2 tracking-tight group-hover:scale-105 transition-transform duration-300">
+                    92<span class="text-3xl md:text-4xl text-text-secondary-light dark:text-text-secondary-dark font-bold ml-1">%</span>
+</h3>
+<p class="text-lg text-text-secondary-light dark:text-text-secondary-dark font-semibold mt-2">
+                    재이용 농가 비율
+                </p>
+<span class="text-sm text-gray-400 dark:text-gray-500 mt-1">Retention Rate</span>
+</div>
+</div>
+<div class="mt-16 text-center">
+<p class="text-sm text-text-secondary-light dark:text-text-secondary-dark">
+                * 2023년 10월 기준 내부 데이터
+            </p>
+</div>
+</section>
+
+</body></html>
