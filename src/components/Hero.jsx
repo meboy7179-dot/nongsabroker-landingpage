@@ -7,10 +7,7 @@ const Hero = () => {
             <nav className="navbar">
                 <div className="container navbar-content">
                     <div className="navbar-logo">
-                        <div className="logo-icon">
-                            <span className="material-icons-round">agriculture</span>
-                        </div>
-                        <span className="logo-text">Nongin Broker</span>
+                        <img src="/images/농인중개사_로고.png" alt="농인중개사" className="logo-img" />
                     </div>
                     <div className="navbar-links">
                         <a href="#">서비스 소개</a>
