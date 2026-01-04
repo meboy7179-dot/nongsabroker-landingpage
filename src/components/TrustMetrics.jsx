@@ -1,17 +1,20 @@
 import React from 'react';
+import { useLanguage } from '../contexts/LanguageContext';
 import './TrustMetrics.css';
 
 const TrustMetrics = () => {
+    const { t } = useLanguage();
+
     return (
         <section className="metrics-section">
             <div className="container" style={{ maxWidth: '72rem' }}>
                 <div className="metrics-header">
                     <h2 className="metrics-title">
-                        숫자로 증명하는<br />
-                        <span className="text-primary">확실한 신뢰</span>
+                        {t('metrics.title')}<br />
+                        <span className="text-primary">{t('metrics.titleHighlight')}</span>
                     </h2>
                     <p className="metrics-description">
-                        농인 브로커는 데이터로 투명하게 일합니다.
+                        {t('metrics.description')}
                     </p>
                 </div>
 
@@ -23,8 +26,8 @@ const TrustMetrics = () => {
                         <h3 className="metric-value">
                             15,000<span className="metric-unit">+</span>
                         </h3>
-                        <p className="metric-label">누적 매칭 인력 수</p>
-                        <span className="metric-subtext">검증된 인력 공급</span>
+                        <p className="metric-label">{t('metrics.metric1Label')}</p>
+                        <span className="metric-subtext">{t('metrics.metric1Subtext')}</span>
                     </div>
 
                     <div className="metric-card">
@@ -34,8 +37,8 @@ const TrustMetrics = () => {
                         <h3 className="metric-value text-primary">
                             98.5<span className="metric-unit">%</span>
                         </h3>
-                        <p className="metric-label">평균 출근율</p>
-                        <span className="metric-subtext">높은 성실도</span>
+                        <p className="metric-label">{t('metrics.metric2Label')}</p>
+                        <span className="metric-subtext">{t('metrics.metric2Subtext')}</span>
                     </div>
 
                     <div className="metric-card">
@@ -45,14 +48,14 @@ const TrustMetrics = () => {
                         <h3 className="metric-value">
                             92<span className="metric-unit">%</span>
                         </h3>
-                        <p className="metric-label">재이용 농가 비율</p>
-                        <span className="metric-subtext">높은 만족도</span>
+                        <p className="metric-label">{t('metrics.metric3Label')}</p>
+                        <span className="metric-subtext">{t('metrics.metric3Subtext')}</span>
                     </div>
                 </div>
 
                 <div className="metrics-footer">
                     <p className="footer-note">
-                        * 2023년 10월 기준 내부 데이터
+                        {t('metrics.footerNote')}
                     </p>
                 </div>
             </div>

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { LanguageProvider, useLanguage } from './contexts/LanguageContext';
 import EntryScreen from './components/EntryScreen';
 import Hero from './components/Hero';
 import ProblemRecognition from './components/ProblemRecognition';
@@ -6,18 +7,18 @@ import SolutionSteps from './components/SolutionSteps';
 import TrustMetrics from './components/TrustMetrics';
 import FinalCallToAction from './components/FinalCallToAction';
 
-function App() {
-    const [selectedCountry, setSelectedCountry] = useState(null);
+function AppContent() {
+    const [languageSelected, setLanguageSelected] = useState(false);
+    const { changeLanguage } = useLanguage();
 
-    const handleCountrySelect = (countryCode) => {
-        console.log("Selected country:", countryCode);
-        setSelectedCountry(countryCode);
-        // Here you could also save to localStorage if persistent choice is desired
-        // localStorage.setItem('userCountry', countryCode);
+    const handleLanguageSelect = (langCode) => {
+        console.log("Selected language:", langCode);
+        changeLanguage(langCode);
+        setLanguageSelected(true);
     };
 
-    if (!selectedCountry) {
-        return <EntryScreen onSelect={handleCountrySelect} />;
+    if (!languageSelected) {
+        return <EntryScreen onSelect={handleLanguageSelect} />;
     }
 
     return (
@@ -28,6 +29,14 @@ function App() {
             <TrustMetrics />
             <FinalCallToAction />
         </div>
+    );
+}
+
+function App() {
+    return (
+        <LanguageProvider>
+            <AppContent />
+        </LanguageProvider>
     );
 }
 

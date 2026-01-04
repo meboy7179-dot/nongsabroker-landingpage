@@ -1,0 +1,74 @@
+{
+    "navbar": {
+        "service": "Giới thiệu dịch vụ",
+        "findJob": "Tìm việc làm",
+        "findTalent": "Tìm nhân tài",
+        "support": "Hỗ trợ",
+        "login": "Đăng nhập"
+    },
+    "hero": {
+        "badge": "5,000+ trang trại đã xác minh",
+        "title": "Không để nông trại dừng lại",
+        "titleHighlight": "vì thiếu lao động",
+        "description": "Nongin Broker - Nền tảng kết nối lao động nước ngoài đã được xác minh.\nTìm công nhân đáng tin cậy chỉ với một ứng dụng, không có quy trình phức tạp.",
+        "ctaPrimary": "Bắt đầu ngay",
+        "ctaSecondary": "Xem video",
+        "trustVerified": "Xác minh danh tính",
+        "trustPayment": "Thanh toán an toàn",
+        "trustSupport": "Hỗ trợ 24/7",
+        "partnersTitle": "Hợp tác với các hợp tác xã nông nghiệp lớn trên toàn quốc",
+        "overlayLabel": "Thu nhập dự kiến hôm nay",
+        "overlayBadge": "Đang làm việc",
+        "statLabel": "Tỷ lệ kết nối thành công",
+        "statSubtext": "2,400 kết nối tháng trước"
+    },
+    "problems": {
+        "badge": "Tại sao chọn Nongin Broker?",
+        "title": "Không còn lo lắng\nvề thiếu lao động nông thôn.",
+        "subtitle": "Chúng tôi giải quyết các vấn đề cốt lõi của thiếu lao động nông nghiệp.",
+        "problem1Title": "Lực lượng lao động giảm do già hóa",
+        "problem1Desc": "Ít người lao động hơn, độ tuổi trung bình cao hơn.\nGiảm lực lượng lao động nông thôn do già hóa dân số.",
+        "problem2Title": "Vắng mặt đột ngột",
+        "problem2Desc": "Trong mùa thu hoạch bận rộn, công nhân biến mất không báo trước.\nVắng mặt và dừng công việc bất ngờ.",
+        "problem3Title": "Khó khăn trong giao tiếp",
+        "problem3Desc": "Sai sót trong công việc do rào cản ngôn ngữ với công nhân nước ngoài.\nSai sót trong công việc do rào cản giao tiếp.",
+        "ctaButton": "Xem giải pháp",
+        "footerText": "Chúng tôi kết nối công nhân đã xác minh nhanh chóng và dễ dàng."
+    },
+    "steps": {
+        "title": "Nongin Broker hoạt động như thế nào",
+        "description": "Kết nối trang trại đã xác minh và công nhân đáng tin cậy trong 3 bước.\nĐáng tin cậy, minh bạch và nhanh chóng.",
+        "step1Title": "Tạo hồ sơ",
+        "step1Desc": "Đăng ký nhanh chóng và tạo hồ sơ đáng tin cậy. Đăng ký kỹ năng, vị trí và sở thích công việc để được kết nối ngay lập tức.",
+        "step2Title": "Tìm và chấp nhận công việc",
+        "step2Desc": "Duyệt các công việc nông nghiệp đã xác minh gần đó. Kiểm tra lương hàng ngày, vị trí trang trại và yêu cầu trước khi chấp nhận.",
+        "step3Title": "Làm việc và nhận tiền",
+        "step3Desc": "Hoàn thành công việc và nhận thanh toán được đảm bảo. Xây dựng điểm uy tín để có cơ hội thu nhập cao hơn.",
+        "ctaButton": "Bắt đầu ngay",
+        "footerText": "Tham gia cùng hơn 10,000 công nhân tìm việc mỗi ngày."
+    },
+    "metrics": {
+        "title": "Được chứng minh bằng con số,",
+        "titleHighlight": "sự tin cậy vững chắc",
+        "description": "Nongin Broker hoạt động minh bạch với dữ liệu.",
+        "metric1Label": "Tổng số công nhân đã kết nối",
+        "metric1Subtext": "Cung cấp lực lượng lao động đã xác minh",
+        "metric2Label": "Tỷ lệ chuyên cần trung bình",
+        "metric2Subtext": "Độ tin cậy cao",
+        "metric3Label": "Tỷ lệ trang trại quay lại",
+        "metric3Subtext": "Sự hài lòng cao",
+        "footerNote": "* Dữ liệu nội bộ tính đến tháng 10 năm 2023"
+    },
+    "finalCta": {
+        "title": "Tiêu chuẩn mới cho công việc nông thôn,\ntham gia Nongin Broker.",
+        "titleHighlight": "Nongin Broker",
+        "description": "Cách nhanh nhất và an toàn nhất để kết nối trang trại đã xác minh với công nhân đáng tin cậy.\nBắt đầu ngay và trải nghiệm quản lý lực lượng lao động nông nghiệp hiệu quả.",
+        "cardTitle": "Đối tác bạn có thể tin tưởng",
+        "cardDescription": "Từ kiểm tra công việc hôm nay đến thanh toán tiền lương,\nchúng tôi quản lý mọi quy trình một cách minh bạch và đơn giản.",
+        "ctaPrimary": "Bắt đầu ngay",
+        "ctaSecondary": "Tìm hiểu thêm",
+        "feature1": "Chủ trang trại đã xác minh",
+        "feature2": "Thanh toán lương an toàn",
+        "feature3": "Kết nối thời gian thực"
+    }
+}

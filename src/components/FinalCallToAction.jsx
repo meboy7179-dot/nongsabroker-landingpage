@@ -1,18 +1,42 @@
 import React from 'react';
+import { useLanguage } from '../contexts/LanguageContext';
 import './FinalCallToAction.css';
 
 const FinalCallToAction = () => {
+    const { t } = useLanguage();
+
     return (
         <section className="cta-section">
             <div className="container cta-container">
                 <div className="cta-header">
                     <h2 className="cta-title">
-                        농촌 일자리의 새로운 기준,<br className="break-md" />
-                        <span className="text-primary">농인중개사</span>와 함께하세요.
+                        {t('finalCta.title').split('\n').map((line, i, arr) => {
+                            // Check if this line contains the titleHighlight text
+                            const highlightText = t('finalCta.titleHighlight');
+                            if (line.includes(highlightText)) {
+                                const parts = line.split(highlightText);
+                                return (
+                                    <React.Fragment key={i}>
+                                        {parts[0]}
+                                        <span className="text-primary">{highlightText}</span>
+                                        {parts[1]}
+                                        {i < arr.length - 1 && <><br className="break-md" /></>}
+                                    </React.Fragment>
+                                );
+                            }
+                            return (
+                                <React.Fragment key={i}>
+                                    {line}{i < arr.length - 1 && <><br className="break-md" /></>}
+                                </React.Fragment>
+                            );
+                        })}
                     </h2>
                     <p className="cta-description">
-                        검증된 농장과 성실한 근로자를 연결하는 가장 빠르고 안전한 방법.<br className="break-sm" />
-                        지금 바로 시작하여 효율적인 농업 인력 관리를 경험해보세요.
+                        {t('finalCta.description').split('\n').map((line, i) => (
+                            <React.Fragment key={i}>
+                                {line}{i < t('finalCta.description').split('\n').length - 1 && <><br className="break-sm" /></>}
+                            </React.Fragment>
+                        ))}
                     </p>
                 </div>
 
@@ -24,19 +48,22 @@ const FinalCallToAction = () => {
                         <div className="cta-icon-wrapper">
                             <span className="material-icons-round cta-main-icon">agriculture</span>
                         </div>
-                        <h3 className="cta-card-title">신뢰할 수 있는 파트너</h3>
+                        <h3 className="cta-card-title">{t('finalCta.cardTitle')}</h3>
                         <p className="cta-card-text">
-                            오늘의 일자리 확인부터 급여 정산까지,<br />
-                            모든 과정을 투명하고 간편하게 관리합니다.
+                            {t('finalCta.cardDescription').split('\n').map((line, i) => (
+                                <React.Fragment key={i}>
+                                    {line}{i < t('finalCta.cardDescription').split('\n').length - 1 && <br />}
+                                </React.Fragment>
+                            ))}
                         </p>
 
                         <div className="cta-buttons">
                             <button className="cta-btn-primary group">
-                                <span>농인중개사 시작하기</span>
+                                <span>{t('finalCta.ctaPrimary')}</span>
                                 <span className="material-icons-round cta-btn-icon group-hover-translate">arrow_forward</span>
                             </button>
                             <button className="cta-btn-secondary">
-                                <span>더 알아보기</span>
+                                <span>{t('finalCta.ctaSecondary')}</span>
                             </button>
                         </div>
                     </div>
@@ -45,15 +72,15 @@ const FinalCallToAction = () => {
                 <div className="cta-features">
                     <div className="cta-feature-item">
                         <span className="material-icons-round text-primary">check_circle</span>
-                        <span>검증된 농장주</span>
+                        <span>{t('finalCta.feature1')}</span>
                     </div>
                     <div className="cta-feature-item">
                         <span className="material-icons-round text-primary">check_circle</span>
-                        <span>안전한 급여 지급</span>
+                        <span>{t('finalCta.feature2')}</span>
                     </div>
                     <div className="cta-feature-item">
                         <span className="material-icons-round text-primary">check_circle</span>
-                        <span>실시간 매칭 시스템</span>
+                        <span>{t('finalCta.feature3')}</span>
                     </div>
                 </div>
             </div>

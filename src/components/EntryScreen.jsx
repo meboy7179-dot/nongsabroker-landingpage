@@ -4,13 +4,13 @@ import { motion } from 'framer-motion';
 import './EntryScreen.css';
 
 const countries = [
-    { code: 'KR', name: 'South Korea', native: '한국어', flag: 'kr' },
-    { code: 'VN', name: 'Vietnam', native: 'Tiếng Việt', flag: 'vn' },
-    { code: 'KH', name: 'Cambodia', native: 'Khmer', flag: 'kh' },
-    { code: 'NP', name: 'Nepal', native: 'नेपाली', flag: 'np' },
-    { code: 'LA', name: 'Laos', native: 'Lao', flag: 'la' },
-    { code: 'TH', name: 'Thailand', native: 'ไทย', flag: 'th' },
-    { code: 'RU', name: 'Russia', native: 'Русский', flag: 'ru' }
+    { code: 'KR', name: 'South Korea', native: '한국어', flag: 'kr', lang: 'ko' },
+    { code: 'VN', name: 'Vietnam', native: 'Tiếng Việt', flag: 'vn', lang: 'vi' },
+    { code: 'KH', name: 'Cambodia', native: 'Khmer', flag: 'kh', lang: 'km' },
+    { code: 'NP', name: 'Nepal', native: 'नेपाली', flag: 'np', lang: 'ne' },
+    { code: 'LA', name: 'Laos', native: 'Lao', flag: 'la', lang: 'lo' },
+    { code: 'TH', name: 'Thailand', native: 'ไทย', flag: 'th', lang: 'th' },
+    { code: 'RU', name: 'Russia', native: 'Русский', flag: 'ru', lang: 'ru' }
 ];
 
 const containerVariants = {
@@ -56,7 +56,7 @@ const EntryScreen = ({ onSelect }) => {
                             className="country-card"
                             whileHover={{ scale: 1.05, backgroundColor: "rgba(255, 255, 255, 0.9)" }}
                             whileTap={{ scale: 0.95 }}
-                            onClick={() => onSelect(country.code)}
+                            onClick={() => onSelect(country.lang)}
                         >
                             <div className="flag-wrapper">
                                 <img

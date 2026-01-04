@@ -1,0 +1,74 @@
+{
+    "navbar": {
+        "service": "About Service",
+        "findJob": "Find Jobs",
+        "findTalent": "Find Talent",
+        "support": "Support",
+        "login": "Login"
+    },
+    "hero": {
+        "badge": "5,000+ Verified Farms",
+        "title": "Don't let your farm stop",
+        "titleHighlight": "due to labor shortage",
+        "description": "Nongin Broker - A verified foreign worker matching platform.\nFind reliable workers with just one app, no complicated process.",
+        "ctaPrimary": "Get Started",
+        "ctaSecondary": "Watch Video",
+        "trustVerified": "Identity Verified",
+        "trustPayment": "Secure Payment",
+        "trustSupport": "24/7 Support",
+        "partnersTitle": "Working with major agricultural cooperatives nationwide",
+        "overlayLabel": "Today's Expected Income",
+        "overlayBadge": "Working",
+        "statLabel": "Matching Success Rate",
+        "statSubtext": "2,400 matches last month"
+    },
+    "problems": {
+        "badge": "Why Nongin Broker?",
+        "title": "No more worries\nabout rural labor shortage.",
+        "subtitle": "We solve the core problems of agricultural labor shortage.",
+        "problem1Title": "Declining workforce due to aging",
+        "problem1Desc": "Fewer workers, higher average age.\nRural workforce decline due to aging population.",
+        "problem2Title": "Sudden no-shows",
+        "problem2Desc": "During busy harvest season, workers disappear without notice.\nUnexpected no-shows and work stoppages.",
+        "problem3Title": "Communication difficulties",
+        "problem3Desc": "Work errors due to language barriers with foreign workers.\nWork errors due to communication barriers.",
+        "ctaButton": "See Solutions",
+        "footerText": "We match verified workers quickly and easily."
+    },
+    "steps": {
+        "title": "How Nongin Broker Works",
+        "description": "Connect verified farms and reliable workers in 3 steps.\nTrustworthy, transparent, and fast.",
+        "step1Title": "Create Profile",
+        "step1Desc": "Sign up quickly and create a reliable profile. Register your skills, location, and work preferences to get matched instantly.",
+        "step2Title": "Find and Accept Jobs",
+        "step2Desc": "Browse verified agricultural jobs nearby. Check daily pay, farm location, and requirements before accepting.",
+        "step3Title": "Work and Get Paid",
+        "step3Desc": "Complete work and receive guaranteed payment. Build your reputation score for higher income opportunities.",
+        "ctaButton": "Start Now",
+        "footerText": "Join over 10,000 workers finding jobs every day."
+    },
+    "metrics": {
+        "title": "Proven by numbers,",
+        "titleHighlight": "solid trust",
+        "description": "Nongin Broker operates transparently with data.",
+        "metric1Label": "Total Workers Matched",
+        "metric1Subtext": "Verified workforce supply",
+        "metric2Label": "Average Attendance Rate",
+        "metric2Subtext": "High reliability",
+        "metric3Label": "Farm Retention Rate",
+        "metric3Subtext": "High satisfaction",
+        "footerNote": "* Internal data as of October 2023"
+    },
+    "finalCta": {
+        "title": "A new standard for rural jobs,\njoin Nongin Broker.",
+        "titleHighlight": "Nongin Broker",
+        "description": "The fastest and safest way to connect verified farms with reliable workers.\nStart now and experience efficient agricultural workforce management.",
+        "cardTitle": "A Partner You Can Trust",
+        "cardDescription": "From checking today's jobs to wage settlement,\nwe manage every process transparently and simply.",
+        "ctaPrimary": "Get Started",
+        "ctaSecondary": "Learn More",
+        "feature1": "Verified Farm Owners",
+        "feature2": "Secure Wage Payment",
+        "feature3": "Real-time Matching"
+    }
+}

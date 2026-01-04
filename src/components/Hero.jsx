@@ -1,7 +1,10 @@
 import React from 'react';
+import { useLanguage } from '../contexts/LanguageContext';
 import './Hero.css';
 
 const Hero = () => {
+    const { t } = useLanguage();
+
     return (
         <React.Fragment>
             <nav className="navbar">
@@ -10,16 +13,16 @@ const Hero = () => {
                         <img src="/images/농인중개사_로고.png" alt="농인중개사" className="logo-img" />
                     </div>
                     <div className="navbar-links">
-                        <a href="#">서비스 소개</a>
-                        <a href="#">일자리 찾기</a>
-                        <a href="#">인재 찾기</a>
-                        <a href="#">고객센터</a>
+                        <a href="#">{t('navbar.service')}</a>
+                        <a href="#">{t('navbar.findJob')}</a>
+                        <a href="#">{t('navbar.findTalent')}</a>
+                        <a href="#">{t('navbar.support')}</a>
                     </div>
                     <div className="navbar-actions">
                         <button className="icon-btn">
                             <span className="material-icons-round">language</span>
                         </button>
-                        <button className="login-btn">로그인</button>
+                        <button className="login-btn">{t('navbar.login')}</button>
                     </div>
                 </div>
             </nav>
@@ -34,13 +37,13 @@ const Hero = () => {
                                     <span className="badge-dot-ping"></span>
                                     <span className="badge-dot"></span>
                                 </span>
-                                <span className="badge-text">5,000+ 농가 인증</span>
+                                <span className="badge-text">{t('hero.badge')}</span>
                             </div>
 
                             <h1 className="hero-title">
-                                일손 부족으로 <br className="break-sm" />
+                                {t('hero.title')} <br className="break-sm" />
                                 <span className="highlight-text">
-                                    농사가 멈추지 않게
+                                    {t('hero.titleHighlight')}
                                     <svg className="highlight-underline" viewBox="0 0 100 10" preserveAspectRatio="none">
                                         <path d="M0 5 Q 50 10 100 5" fill="none" stroke="currentColor" strokeWidth="8"></path>
                                     </svg>
@@ -48,33 +51,36 @@ const Hero = () => {
                             </h1>
 
                             <p className="hero-description">
-                                검증된 외국인 인력 매칭 플랫폼, 농인중개사.<br />
-                                복잡한 절차 없이 앱 하나로 신뢰할 수 있는 일손을 만나보세요.
+                                {t('hero.description').split('\n').map((line, i) => (
+                                    <React.Fragment key={i}>
+                                        {line}{i < t('hero.description').split('\n').length - 1 && <br />}
+                                    </React.Fragment>
+                                ))}
                             </p>
 
                             <div className="hero-buttons">
                                 <button className="btn-primary">
-                                    <span>농인중개사 시작하기</span>
+                                    <span>{t('hero.ctaPrimary')}</span>
                                     <span className="material-icons-round">arrow_forward</span>
                                 </button>
                                 <button className="btn-secondary">
                                     <span className="material-icons-round text-primary">play_circle</span>
-                                    <span>서비스 소개 영상</span>
+                                    <span>{t('hero.ctaSecondary')}</span>
                                 </button>
                             </div>
 
                             <div className="hero-trust-badges">
                                 <div className="trust-item">
                                     <span className="material-icons-round text-green">check_circle</span>
-                                    <span>신원 인증 완료</span>
+                                    <span>{t('hero.trustVerified')}</span>
                                 </div>
                                 <div className="trust-item">
                                     <span className="material-icons-round text-green">check_circle</span>
-                                    <span>안전 결제 시스템</span>
+                                    <span>{t('hero.trustPayment')}</span>
                                 </div>
                                 <div className="trust-item">
                                     <span className="material-icons-round text-green">check_circle</span>
-                                    <span>24시간 지원</span>
+                                    <span>{t('hero.trustSupport')}</span>
                                 </div>
                             </div>
                         </div>
@@ -90,10 +96,10 @@ const Hero = () => {
                                             <span className="material-icons-round">eco</span>
                                         </div>
                                         <div className="overlay-text">
-                                            <p className="overlay-label">오늘의 예상 수익</p>
+                                            <p className="overlay-label">{t('hero.overlayLabel')}</p>
                                             <p className="overlay-value">₩ 130,000</p>
                                         </div>
-                                        <div className="overlay-badge">작업 중</div>
+                                        <div className="overlay-badge">{t('hero.overlayBadge')}</div>
                                     </div>
                                 </div>
 
@@ -107,7 +113,7 @@ const Hero = () => {
 
                                 <div className="stat-card">
                                     <div className="stat-header">
-                                        <span className="stat-label">매칭 성공률</span>
+                                        <span className="stat-label">{t('hero.statLabel')}</span>
                                         <span className="stat-icon-bg">
                                             <span className="material-icons-round text-green">trending_up</span>
                                         </span>
@@ -116,7 +122,7 @@ const Hero = () => {
                                     <div className="stat-bar-bg">
                                         <div className="stat-bar-fill" style={{ width: '98%' }}></div>
                                     </div>
-                                    <p className="stat-subtext">지난 달 2,400건 매칭 완료</p>
+                                    <p className="stat-subtext">{t('hero.statSubtext')}</p>
                                 </div>
                             </div>
                         </div>
@@ -126,7 +132,7 @@ const Hero = () => {
 
             <section className="partners-section">
                 <div className="container">
-                    <p className="partners-title">전국 주요 농협 및 파트너사와 함께합니다</p>
+                    <p className="partners-title">{t('hero.partnersTitle')}</p>
                     <div className="partners-grid">
                         <div className="partner-logo">
                             <span className="material-icons-round">spa</span> GREEN FARM
