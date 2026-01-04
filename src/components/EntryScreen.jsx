@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Lock } from 'lucide-react';
+
 import './EntryScreen.css';
 
 const countries = [
@@ -31,6 +31,9 @@ const itemVariants = {
 const EntryScreen = ({ onSelect }) => {
     return (
         <div className="entry-screen-container">
+            <div className="brand-logo-container">
+                <img src="/images/농인중개사_로고.png" alt="Nongin Broker Logo" className="brand-logo" />
+            </div>
             <div className="entry-background-image" />
             <div className="entry-overlay" />
 
@@ -71,15 +74,10 @@ const EntryScreen = ({ onSelect }) => {
                     ))}
                 </motion.div>
 
-                <motion.div className="footer-section" variants={itemVariants}>
-                    <Lock size={14} className="lock-icon" />
-                    <span>Secure selection. Your data is protected.</span>
-                </motion.div>
+
             </motion.div>
 
-            <div className="legal-footer">
-                © 2024 Nongin Broker · Privacy Policy · Terms of Service · Help Center
-            </div>
+
         </div>
     );
 };
