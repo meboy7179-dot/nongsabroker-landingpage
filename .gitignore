@@ -119,3 +119,6 @@ Thumbs.db
 .vscode/
 *.swp
 *.swo
+
+# Project specific
+dev_reference/
