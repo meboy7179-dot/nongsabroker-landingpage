@@ -45,7 +45,7 @@ const EntryScreen = ({ onSelect }) => {
             >
                 <div className="header-section">
                     <motion.h1 variants={itemVariants}>
-                        Choice
+                        🌐 언어를 선택하세요
                     </motion.h1>
                 </div>
 
