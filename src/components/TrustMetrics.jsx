@@ -2,7 +2,7 @@ import React from 'react';
 import { useLanguage } from '../contexts/LanguageContext';
 import './TrustMetrics.css';
 
-const TrustMetrics = () => {
+const TrustMetrics = ({ userType }) => {
     const { t } = useLanguage();
 
     return (
@@ -10,11 +10,11 @@ const TrustMetrics = () => {
             <div className="container" style={{ maxWidth: '72rem' }}>
                 <div className="metrics-header">
                     <h2 className="metrics-title">
-                        {t('metrics.title')}<br />
-                        <span className="text-primary">{t('metrics.titleHighlight')}</span>
+                        {t(`${userType}.metrics.title`)}<br />
+                        <span className="text-primary">{t(`${userType}.metrics.titleHighlight`)}</span>
                     </h2>
                     <p className="metrics-description">
-                        {t('metrics.description')}
+                        {t(`${userType}.metrics.description`)}
                     </p>
                 </div>
 
@@ -26,8 +26,8 @@ const TrustMetrics = () => {
                         <h3 className="metric-value">
                             15,000<span className="metric-unit">+</span>
                         </h3>
-                        <p className="metric-label">{t('metrics.metric1Label')}</p>
-                        <span className="metric-subtext">{t('metrics.metric1Subtext')}</span>
+                        <p className="metric-label">{t(`${userType}.metrics.metric1Label`)}</p>
+                        <span className="metric-subtext">{t(`${userType}.metrics.metric1Subtext`)}</span>
                     </div>
 
                     <div className="metric-card">
@@ -37,8 +37,8 @@ const TrustMetrics = () => {
                         <h3 className="metric-value text-primary">
                             98.5<span className="metric-unit">%</span>
                         </h3>
-                        <p className="metric-label">{t('metrics.metric2Label')}</p>
-                        <span className="metric-subtext">{t('metrics.metric2Subtext')}</span>
+                        <p className="metric-label">{t(`${userType}.metrics.metric2Label`)}</p>
+                        <span className="metric-subtext">{t(`${userType}.metrics.metric2Subtext`)}</span>
                     </div>
 
                     <div className="metric-card">
@@ -48,14 +48,14 @@ const TrustMetrics = () => {
                         <h3 className="metric-value">
                             92<span className="metric-unit">%</span>
                         </h3>
-                        <p className="metric-label">{t('metrics.metric3Label')}</p>
-                        <span className="metric-subtext">{t('metrics.metric3Subtext')}</span>
+                        <p className="metric-label">{t(`${userType}.metrics.metric3Label`)}</p>
+                        <span className="metric-subtext">{t(`${userType}.metrics.metric3Subtext`)}</span>
                     </div>
                 </div>
 
                 <div className="metrics-footer">
                     <p className="footer-note">
-                        {t('metrics.footerNote')}
+                        {t(`${userType}.metrics.footerNote`)}
                     </p>
                 </div>
             </div>

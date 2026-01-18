@@ -2,7 +2,7 @@ import React from 'react';
 import { useLanguage } from '../contexts/LanguageContext';
 import './FinalCallToAction.css';
 
-const FinalCallToAction = () => {
+const FinalCallToAction = ({ userType }) => {
     const { t } = useLanguage();
 
     return (
@@ -10,9 +10,9 @@ const FinalCallToAction = () => {
             <div className="container cta-container">
                 <div className="cta-header">
                     <h2 className="cta-title">
-                        {t('finalCta.title').split('\n').map((line, i, arr) => {
+                        {t(`${userType}.finalCta.title`).split('\n').map((line, i, arr) => {
                             // Check if this line contains the titleHighlight text
-                            const highlightText = t('finalCta.titleHighlight');
+                            const highlightText = t(`${userType}.finalCta.titleHighlight`);
                             if (line.includes(highlightText)) {
                                 const parts = line.split(highlightText);
                                 return (
@@ -32,9 +32,9 @@ const FinalCallToAction = () => {
                         })}
                     </h2>
                     <p className="cta-description">
-                        {t('finalCta.description').split('\n').map((line, i) => (
+                        {t(`${userType}.finalCta.description`).split('\n').map((line, i) => (
                             <React.Fragment key={i}>
-                                {line}{i < t('finalCta.description').split('\n').length - 1 && <><br className="break-sm" /></>}
+                                {line}{i < t(`${userType}.finalCta.description`).split('\n').length - 1 && <><br className="break-sm" /></>}
                             </React.Fragment>
                         ))}
                     </p>
@@ -48,22 +48,22 @@ const FinalCallToAction = () => {
                         <div className="cta-icon-wrapper">
                             <span className="material-icons-round cta-main-icon">agriculture</span>
                         </div>
-                        <h3 className="cta-card-title">{t('finalCta.cardTitle')}</h3>
+                        <h3 className="cta-card-title">{t(`${userType}.finalCta.cardTitle`)}</h3>
                         <p className="cta-card-text">
-                            {t('finalCta.cardDescription').split('\n').map((line, i) => (
+                            {t(`${userType}.finalCta.cardDescription`).split('\n').map((line, i) => (
                                 <React.Fragment key={i}>
-                                    {line}{i < t('finalCta.cardDescription').split('\n').length - 1 && <br />}
+                                    {line}{i < t(`${userType}.finalCta.cardDescription`).split('\n').length - 1 && <br />}
                                 </React.Fragment>
                             ))}
                         </p>
 
                         <div className="cta-buttons">
                             <button className="cta-btn-primary group">
-                                <span>{t('finalCta.ctaPrimary')}</span>
+                                <span>{t(`${userType}.finalCta.ctaPrimary`)}</span>
                                 <span className="material-icons-round cta-btn-icon group-hover-translate">arrow_forward</span>
                             </button>
                             <button className="cta-btn-secondary">
-                                <span>{t('finalCta.ctaSecondary')}</span>
+                                <span>{t(`${userType}.finalCta.ctaSecondary`)}</span>
                             </button>
                         </div>
                     </div>
@@ -72,15 +72,15 @@ const FinalCallToAction = () => {
                 <div className="cta-features">
                     <div className="cta-feature-item">
                         <span className="material-icons-round text-primary">check_circle</span>
-                        <span>{t('finalCta.feature1')}</span>
+                        <span>{t(`${userType}.finalCta.feature1`)}</span>
                     </div>
                     <div className="cta-feature-item">
                         <span className="material-icons-round text-primary">check_circle</span>
-                        <span>{t('finalCta.feature2')}</span>
+                        <span>{t(`${userType}.finalCta.feature2`)}</span>
                     </div>
                     <div className="cta-feature-item">
                         <span className="material-icons-round text-primary">check_circle</span>
-                        <span>{t('finalCta.feature3')}</span>
+                        <span>{t(`${userType}.finalCta.feature3`)}</span>
                     </div>
                 </div>
             </div>

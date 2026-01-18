@@ -1,0 +1,78 @@
+.footer {
+    background-color: #f9fafb;
+    padding: 4rem 0 2rem;
+    color: var(--color-text-sub-light);
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 3rem;
+    margin-bottom: 3rem;
+}
+
+.footer-brand {
+    max-width: 300px;
+}
+
+.footer-logo {
+    height: 32px;
+    width: auto;
+    margin-bottom: 1rem;
+    filter: grayscale(1);
+    opacity: 0.8;
+}
+
+.footer-desc {
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+.footer-links-group {
+    display: flex;
+    gap: 4rem;
+    flex-wrap: wrap;
+}
+
+.footer-section h4 {
+    color: var(--color-text-main-light);
+    font-weight: 600;
+    margin-bottom: 1.2rem;
+    font-size: 0.95rem;
+}
+
+.footer-section a {
+    display: block;
+    margin-bottom: 0.8rem;
+    font-size: 0.9rem;
+    transition: color 0.2s;
+}
+
+.footer-section a:hover {
+    color: var(--color-primary);
+}
+
+.footer-bottom {
+    padding-top: 2rem;
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+    text-align: center;
+    font-size: 0.85rem;
+}
+
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .footer-links-group {
+        gap: 2rem;
+        flex-direction: column;
+        /* Or keep row but wrap if strict space needed, usually column is better for mobile footer */
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+    }
+}

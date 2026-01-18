@@ -2,7 +2,7 @@ import React from 'react';
 import { useLanguage } from '../contexts/LanguageContext';
 import './SolutionSteps.css';
 
-const SolutionSteps = () => {
+const SolutionSteps = ({ userType }) => {
     const { t } = useLanguage();
 
     return (
@@ -10,12 +10,12 @@ const SolutionSteps = () => {
             <div className="container">
                 <div className="steps-header">
                     <h2 className="steps-title">
-                        {t('steps.title')}
+                        {t(`${userType}.steps.title`)}
                     </h2>
                     <p className="steps-description">
-                        {t('steps.description').split('\n').map((line, i) => (
+                        {t(`${userType}.steps.description`).split('\n').map((line, i) => (
                             <React.Fragment key={i}>
-                                {line}{i < t('steps.description').split('\n').length - 1 && <><br className="break-md" /></>}
+                                {line}{i < t(`${userType}.steps.description`).split('\n').length - 1 && <><br className="break-md" /></>}
                             </React.Fragment>
                         ))}
                     </p>
@@ -28,9 +28,9 @@ const SolutionSteps = () => {
                                 <span className="material-icons-round step-icon">app_registration</span>
                             </div>
                             <div className="step-badge">STEP 1</div>
-                            <h3 className="step-title">{t('steps.step1Title')}</h3>
+                            <h3 className="step-title">{t(`${userType}.steps.step1Title`)}</h3>
                             <p className="step-text">
-                                {t('steps.step1Desc')}
+                                {t(`${userType}.steps.step1Desc`)}
                             </p>
                         </div>
                     </div>
@@ -42,9 +42,9 @@ const SolutionSteps = () => {
                                 <span className="material-icons-round step-icon">travel_explore</span>
                             </div>
                             <div className="step-badge">STEP 2</div>
-                            <h3 className="step-title">{t('steps.step2Title')}</h3>
+                            <h3 className="step-title">{t(`${userType}.steps.step2Title`)}</h3>
                             <p className="step-text">
-                                {t('steps.step2Desc')}
+                                {t(`${userType}.steps.step2Desc`)}
                             </p>
                         </div>
                     </div>
@@ -56,9 +56,9 @@ const SolutionSteps = () => {
                                 <span className="material-icons-round step-icon">payments</span>
                             </div>
                             <div className="step-badge">STEP 3</div>
-                            <h3 className="step-title">{t('steps.step3Title')}</h3>
+                            <h3 className="step-title">{t(`${userType}.steps.step3Title`)}</h3>
                             <p className="step-text">
-                                {t('steps.step3Desc')}
+                                {t(`${userType}.steps.step3Desc`)}
                             </p>
                         </div>
                     </div>
@@ -66,11 +66,11 @@ const SolutionSteps = () => {
 
                 <div className="steps-footer">
                     <button className="steps-cta">
-                        {t('steps.ctaButton')}
+                        {t(`${userType}.steps.ctaButton`)}
                         <span className="material-icons-round ml-2 -mr-1">arrow_forward</span>
                     </button>
                     <p className="steps-footer-text">
-                        {t('steps.footerText')}
+                        {t(`${userType}.steps.footerText`)}
                     </p>
                 </div>
             </div>
